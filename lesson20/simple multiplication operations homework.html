@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+    <button onclick="js(9)">abi</button>
+    <script>
+        function js(a,b) {
+            if (b== undefined) {
+                b=17 ;
+            }
+            document.write(a*b);
+        }
+    </script>
+
+    </fieldset>
+
+    <br>
+
+
+    <fieldset>
+    <p>A function can access variables defined inside the function:</p>
+    <button type="button" onclick="myfunction()">Click mee!!</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    
+    <script>
+         var b=7;
+         function myfunction() {
+            var a =9;
+            document.getElementById("demo"). innerHTML =b*a
+         }
+         document.getElementById("demo1").innerHTML =a;
+
+         document.getElementById("demo1").innerHTML =b;
+        
+
+    </script>
+</fieldset>
+
+<br> 
+
+
+<fieldset>
+<center>
+    <h1 style="color:olive">Codingal Education</h1>
+    <h3>function declaration</h3>
+    <script>
+          
+     var result = function (a,b) {return a*b};
+     document.write(result(34,5));
+    </script>
+</center>
+</fieldset>
+
+ 
+
+
+
+    
+</body>
+</html>
