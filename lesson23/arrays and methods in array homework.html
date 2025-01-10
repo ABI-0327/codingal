@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+         
+         var foods= [
+            "pizza",
+            "Burger",
+            "briyani",
+            "kottu",
+            "fried rice",
+            "pasta",
+            "bread and jam",
+            "paratta",
+            "dhosa",
+            "pittu",
+            "idly"
+            
+         ];
+
+        
+         document.getElementById("demo").innerHTML = foods[5];
+         document.getElementById("demo1").innerHTML = foods[2];
+         document.getElementById("demo2").innerHTML = foods[3];
+         document.getElementById("demo3").innerHTML = foods[6];
+         document.getElementById("demo4").innerHTML = foods[7];
+    </script>
+
+<h2>Java script array methods.</h2>
+<h2>join() and pop()</h2>
+<p>The join() methodvjoins array elements into a string and 
+    the pop() method removes the last element from an array.
+</p>
+ <p id="my join"></p>
+ <p id="my first pop"></p>
+ <p id="my second pop"></p>
+
+ <script>
+    var foods = [ "pizza",
+            "Burger",
+            "briyani",
+            "kottu",
+            "fried rice",
+            "pasta",
+            "bread and jam",
+            "paratta",
+            "dhosa",
+            "pittu",
+            "idly"];
+    document.getElementById("my join").innerHTML = foods.join (" * ")
+    document.getElementById("my first pop").innerHTML = foods; foods.pop ();
+
+    document.getElementById("my second pop").innerHTML = foods;
+
+
+ </script>
+</body>
+</html>
