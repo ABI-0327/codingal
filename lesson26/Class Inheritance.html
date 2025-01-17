@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>function</p>
+    <p id="details"></p>
+    <script>
+        class Car {
+            constructor(brand) {
+                this.carname = brand;
+            }
+            present() {
+                return "I have a " + this.carname;
+            }
+        }
+
+        class Model extends Car {
+            constructor(brand , mod) {
+                super(brand);
+                this.model = mod;
+            }
+            show() {
+                return this.present() + " , It is a " + this.model;
+            }
+        }
+
+        let myCar = new Model("Axio" , "2012") ;
+        document.getElementById("details").innerHTML = 
+        myCar .show();
+    </script>
+</body>
+</html>
