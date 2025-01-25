@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Callbacks</h2>
+    <p>Do a calculation and then display the result.</p>
+    <p id="result"></p>
+    <script>
+         function myDisplayer(value) {
+            document.getElementById("result").innerHTML = value;
+
+        }
+
+        function myCalculator(num1, num2, myCallback) {
+            let sum = num1 - num2;
+            myCallback(sum)
+        }
+        myCalculator(45, 19, myDisplayer);
+    </script>
+
+<p id="result1"></p>
+<script>
+     function myDisplayer(value) {
+        document.getElementById("result1").innerHTML = value;
+
+    }
+
+    function myCalculator(num1, num2, myCallback) {
+        let sum = num1 / num2;
+        myCallback(sum)
+    }
+    myCalculator(185, 5, myDisplayer);
+</script>
+
+<p id="result2"></p>
+<script>
+     function myDisplayer(value) {
+        document.getElementById("result2").innerHTML = value;
+
+    }
+
+    function myCalculator(num1, num2, myCallback) {
+        let sum = num1 * num2;
+        myCallback(sum)
+    }
+    myCalculator(12, 12, myDisplayer);
+</script>
+        
+       
+    
+</body>
+</html>
