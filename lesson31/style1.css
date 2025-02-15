@@ -1,0 +1,43 @@
+html {
+    scroll-behaviour: smooth;
+}
+
+body {
+    background: burlywood;
+    font-family: "Baloo Tamma 2" , cursive;
+}
+
+.m-heading {
+    font-family: "Roboto Slab" , serif;
+}
+
+.text-white {
+    color: wheat;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("galaxy.jpeg.jpg") ;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.main_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_row h1 {
+    font-size: 5rem;
+
+}
+
+.main_row img {
+    width: auto;
+    height: 100vh;
+}
