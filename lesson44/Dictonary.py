@@ -1,0 +1,9 @@
+d={1:"Apple",2:"Banana","Name":"Abisathana"}
+print(d[1])
+print(d["Name"])
+d[2]=27
+print(d)
+d["colour"]="Purple"
+print(d)
+d.pop(1)
+print(d)
