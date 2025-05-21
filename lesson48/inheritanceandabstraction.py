@@ -15,6 +15,7 @@ class employ(person):
 
         person.__init__(self,name,idnumber)
 
+
 obj=employ("Abi",101,200000,"Manager")
 obj.display()
 
